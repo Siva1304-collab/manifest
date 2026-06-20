@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-deploy-2
+  name: my-deploy
 spec:
   replicas: 4
   selector:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: cont-1
-        image: siva1304/reverse_proxy:latest
+        image: siva1304/sport_academy:latest
         ports:
         - containerPort: 3000   # Use port 3000
 
@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-service-2
+  name: my-service
 spec:
   selector:
     app: school
