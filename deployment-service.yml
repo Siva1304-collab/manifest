@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: cont-1
-        image: siva1304/sport_academy:latest
+        image: siva1304/root_kids_school:latest
         ports:
         - containerPort: 80   # Use port 80
 
